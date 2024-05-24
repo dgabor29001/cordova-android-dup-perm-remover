@@ -23,6 +23,12 @@ const {afterPrepareHook} = require('@hollax/cordova-android-dup-perm-remover')
 module.exports = afterPrepareHook;
 ```
 
+3. Run the project
+
+ ```bash
+    cordova run android
+ ```
+ 
 ## Testing
 
 Test uses `chai` and `mocha`.
