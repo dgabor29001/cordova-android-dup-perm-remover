@@ -3,7 +3,7 @@ module.exports = function (context) {
     const fix = require('./remove-duplicate');
     
     //target only android
-    if (!ctx.opts.platforms.includes('android')) {
+    if (!context.opts.platforms.includes('android')) {
         return;
     };
      

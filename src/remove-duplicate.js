@@ -1,7 +1,6 @@
 
 module.exports = function(content){
-    const newLine = /\r?\n/;
-    const manifestLines = content.split(newLine);
+    const manifestLines = content.split("\n");
     const normalized  = [];
     const added = {};
     for(let line of manifestLines){
