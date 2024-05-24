@@ -1,0 +1,28 @@
+{
+  "name": "@hollax/cordova-android-dup-perm-remover",
+  "version": "1.0.0",
+  "description": "Remove duplicate permission from AndroidManifest.xml file",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollax/cordova-android-dup-perm-remover.git"
+  },
+  "keywords": [
+    "cordova",
+    "hooks",
+    "android"
+  ],
+  "author": "Wakeel Ogunsanya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hollax/cordova-android-dup-perm-remover/issues"
+  },
+  "homepage": "https://github.com/hollax/cordova-android-dup-perm-remover#readme",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0"
+  }
+}
