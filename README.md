@@ -10,7 +10,7 @@
 
 ## Usage
     
-1. Add the following definition to `config.xml` to tell Cordova to run `afterPrepare.js` script after each platform build.
+1. Add the following definition to `config.xml` to tell Cordova to run `afterPrepare.js` script beforr each platform build.
 
 ```xml
     <hook type="after_prepare" src="scripts/afterPrepare.js" />
