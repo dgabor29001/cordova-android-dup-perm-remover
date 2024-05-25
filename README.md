@@ -1,6 +1,7 @@
+![test](https://github.com/hollax/cordova-android-dup-perm-remover/actions/workflows/node.js.yml/badge.svg)
+
 # cordova-android-dup-perm-remover
  Remove duplicate permission from AndroidManifest.xml file
-
 
  ## Installation
 
