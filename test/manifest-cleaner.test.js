@@ -5,7 +5,7 @@ const xml = fs.readFileSync(__dirname+'/files/ManifestWithDuplicate.xml').toStri
 const normalized =  fs.readFileSync(__dirname+'/files/ManifestWithoutDuplicate.xml').toString().trim();
 
 describe('cleanManifest', function(){
-       it('remove duplicate attributes', function(){
+       it('remove duplicate permissions', function(){
         expect(clean(xml)).to.eq(normalized)
     });
     

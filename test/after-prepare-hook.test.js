@@ -6,13 +6,13 @@ const normalized =  fs.readFileSync(__dirname+'/files/ManifestWithoutDuplicate.x
 
 const mockManifestFile = __dirname+'/mock/platforms/android/app/src/main/AndroidManifest.xml';
 
-describe('cleanManifest', function(){
+describe('afterPrepareHook', function(){
 
     before(function(){
         fs.writeFileSync(mockManifestFile, xml);
     });
 
-    it('afterPrepareHook', function(){
+    it('Removes duplicate permissions from the AndroidManifest.xml filevu', function(){
         const ctx = {
             opts:{
                 projectRoot:__dirname+'/mock',
