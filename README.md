@@ -1,13 +1,23 @@
 ![test](https://github.com/hollax/cordova-android-dup-perm-remover/actions/workflows/node.js.yml/badge.svg)
 
-# cordova-android-dup-perm-remover
- Remove duplicate permission from AndroidManifest.xml file
+# Cordova Android Duplicate Permissions Remover 
 
- ## Installation
+ This is a Node.js tool specifically designed for Cordova projects to prevent build failures caused by duplicate permissions in the generated `AndroidManifest.xml` file. This tool automatically removes duplicate permissions during the build process, ensuring a smooth and error-free build.
 
- ```bash
-    npm i @hollax/cordova-android-dup-perm-remover
- ```
+## Features
+
+- Automatically removes duplicate permissions from `AndroidManifest.xml`.
+- Integrates seamlessly with the Cordova build process using the `after_prepare` hook.
+- Easy to install and use as a Node package.
+
+## Installation
+
+Install the package via npm:
+
+```sh
+npm install @hollax/cordova-android-dup-perm-remover --save-dev
+```
+
 
 ## Usage
     
@@ -30,6 +40,7 @@ module.exports = afterPrepareHook;
     cordova run android
  ```
  
+
 ## Testing
 
 Test uses `chai` and `mocha`.
@@ -46,3 +57,22 @@ Run the tests
     npm test
  ```
     
+
+## License
+
+This project is licensed under the MIT License (2024).
+
+## Author
+
+**Wakeel Ogunsanya**
+
+- **Email**: [wakeel.oguns@gmail.com](mailto:wakeel.oguns@gmail.com)
+- **LinkedIn**: [Wakeel Ogunsanya](https://ng.linkedin.com/in/wakeel-ogunsanya)
+
+---
+
+For more information, visit the [GitHub repository](https://github.com/hollax/cordova-android-dup-perm-remover).
+
+
+ 
+

@@ -17,7 +17,7 @@
     "android"
   ],
   "author": "Wakeel Ogunsanya",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hollax/cordova-android-dup-perm-remover/issues"
   },
