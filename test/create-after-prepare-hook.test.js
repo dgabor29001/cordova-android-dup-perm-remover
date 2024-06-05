@@ -3,7 +3,7 @@ const creatHook = require('../src/create-after-prepare-hook');
 const expect = require('chai').expect
 const xml = fs.readFileSync(__dirname+'/files/ManifestWithDuplicate.xml').toString().trim();
 const normalized =  fs.readFileSync(__dirname+'/files/ManifestWithoutDuplicate.xml').toString().trim();
-const filtered =  fs.readFileSync(__dirname+'/files/ManifestWithFIlteredPermissions.xml').toString().trim();
+const filtered =  fs.readFileSync(__dirname+'/files/ManifestWithFilteredPermissions.xml').toString().trim();
 
 const mockManifestFile = __dirname+'/mock/platforms/android/app/src/main/AndroidManifest.xml';
 
