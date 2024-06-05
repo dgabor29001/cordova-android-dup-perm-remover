@@ -1,6 +1,6 @@
 {
   "name": "@hollax/cordova-android-dup-perm-remover",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Remove duplicate permission from AndroidManifest.xml file",
   "main": "src/index.js",
   "scripts": {
