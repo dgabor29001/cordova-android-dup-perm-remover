@@ -12,7 +12,7 @@ describe('afterPrepareHook', function(){
         fs.writeFileSync(mockManifestFile, xml);
     });
 
-    it('Removes duplicate permissions from the AndroidManifest.xml filevu', function(){
+    it('Removes duplicate permissions from the AndroidManifest.xml file', function(){
         const ctx = {
             opts:{
                 projectRoot:__dirname+'/mock',
