@@ -40,6 +40,19 @@ module.exports = afterPrepareHook;
     cordova run android
  ```
  
+## Exclude Permission
+
+Since `v1.2`, you can specify permissions to be ecluded from the generated `AndroidManifest.xml`
+
+Edit `scripts/afterPrepare.js` 
+```javascript
+const {createAfterPrepareHook} = require('@hollax/cordova-android-dup-perm-remover')
+module.exports = createAfterPrepareHook({
+   exclude:['android.permission.BLUETOOTH']
+});
+```
+
+
 
 ## Testing
 
