@@ -9,7 +9,8 @@ module.exports = function(opts = {}){
 
     return function(context){
 
-        const exclude = opts.exclude; 
+        const filter = opts.filter;
+        const exclude = opts.exclude;
         const fs = require('fs');
         const fix = require('./remove-duplicate');
         
@@ -21,6 +22,6 @@ module.exports = function(opts = {}){
         const manifestPath = context.opts.projectRoot + '/platforms/android/app/src/main/AndroidManifest.xml';
         const androidManifest = fs.readFileSync(manifestPath).toString();
         
-        fs.writeFileSync(manifestPath, fix(androidManifest, exclude));
+        fs.writeFileSync(manifestPath, fix(androidManifest, filter, exclude));
     }
 }
